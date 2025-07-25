@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Dinamis Interaktif</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">LOGO</div>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" title="Toggle Dark Mode">🌙</button>
+
+      <button class="hamburger" id="hamburger" title="Toggle Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+
+    <ul class="menu" id="menu">
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle">Layanan</a>
+        <ul class="submenu">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">SEO</a></li>
+          <li><a href="#">Marketing</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
